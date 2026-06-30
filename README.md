@@ -106,3 +106,10 @@ You can open an issue or submit a pull request for improvements.
 ## License
 
 This project is licensed under the MIT License.
+
+## Contact
+
+For feedback, questions, or collaboration:
+
+- Email: arko-group@hotmail.com
+- GitHub: https://github.com/IsarBit
