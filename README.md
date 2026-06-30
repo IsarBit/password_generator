@@ -1,122 +1,108 @@
-# 🔐 Password Generator (Python)
+# Password Generator
 
-A simple but powerful password generator built with Python.
-This project allows users to generate secure passwords with customizable length and different complexity levels.
-
----
-
-## 📌 Overview
-
-This program was created as a beginner-to-intermediate Python project to practice:
-
-* User input validation
-* Working with strings
-* Random generation
-* Conditional logic
-
-It is designed to be simple, fast, and easy to use directly from the terminal.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Version](https://img.shields.io/badge/version-1.0-informational)
+![Status](https://img.shields.io/badge/status-maintained-success)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
-## ⚙️ Features
+## Overview
 
-✅ Custom password length
-✅ Input validation (only numbers allowed)
-✅ Minimum password length enforcement (8 characters)
-✅ 6 different security levels
-✅ Randomized password generation
-✅ Uses:
+Password Generator is a lightweight command-line application written in Python for generating secure and customizable passwords.
 
-* Letters (A-Z, a-z)
-* Numbers (0-9)
-* Special characters (!, @, #, etc.)
+The project is designed with a focus on simplicity, reliability, and clean user interaction, making it suitable for both learning purposes and practical usage.
 
 ---
 
-## 🔢 Password Levels
+## Features
 
-| Level | Description                             |
-| ----- | --------------------------------------- |
-| 1     | Letters only                            |
-| 2     | Numbers only                            |
-| 3     | Letters + Numbers                       |
-| 4     | Letters + Symbols                       |
-| 5     | Numbers + Symbols                       |
-| 6     | Letters + Numbers + Symbols (Strongest) |
+* Custom password length input
+* Input validation (numeric values only)
+* Minimum length requirement (8 characters)
+* Multiple password complexity levels
+* Randomized secure password generation
+* Simple and fast command-line interface
 
 ---
 
-## 🚀 How to Run
+## Password Complexity Levels
 
-1. Make sure you have Python installed
-2. Download or clone the repository
-3. Run the file:
+| Level | Composition                   |
+| ----- | ----------------------------- |
+| 1     | Letters (A–Z, a–z)            |
+| 2     | Numbers (0–9)                 |
+| 3     | Letters and Numbers           |
+| 4     | Letters and Symbols           |
+| 5     | Numbers and Symbols           |
+| 6     | Letters, Numbers, and Symbols |
+
+---
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/yourusername/password-generator.git
+cd password-generator
+```
+
+### Run the application
 
 ```bash
 python main.py
 ```
 
-4. Follow the instructions in the terminal
-
 ---
 
-## 🧠 Example Usage
+## Example Usage
 
 ```text
 Enter the password length: 12
 Enter the password level (1-6): 6
 
-Your password is: A$k9!zP2@LmQ
+Your password is: X@9kL!2zQ#pR
 ```
 
 ---
 
-## 🛠️ Technologies Used
+## Project Structure
 
-* Python 3
-* Built-in libraries:
-
-  * random
-  * string
-
----
-
-## 📚 What I Learned
-
-Through this project I improved my skills in:
-
-* Writing cleaner code
-* Handling user input safely
-* Structuring small programs
-* Thinking like a developer
+```
+password-generator/
+│── main.py
+│── README.md
+```
 
 ---
 
-## 🔮 Future Improvements
+## Design Goals
 
-* [ ] Add GUI (graphical interface)
-* [ ] Save passwords to file
-* [ ] Add copy-to-clipboard feature
-* [ ] Create web version (Flask / Django)
-* [ ] Improve security randomness
-
----
-
-## 📬 Contact
-
-If you have feedback or ideas, feel free to reach out:
-
-* Discord: yourname
+* Keep the application simple and easy to use
+* Ensure correct input handling
+* Provide flexible password generation
+* Maintain clean and readable code
 
 ---
 
-## ⭐ Support
+## Future Improvements
 
-If you like this project, consider giving it a star ⭐
-It helps a lot!
+* Graphical user interface (GUI)
+* Web-based version
+* Password strength evaluation
+* Clipboard integration
+* Configuration options
 
 ---
 
-## 📄 License
+## Contributing
 
-This project is open-source and free to use.
+Contributions are welcome.
+You can open an issue or submit a pull request for improvements.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
