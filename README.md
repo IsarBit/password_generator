@@ -34,8 +34,7 @@ The project is designed with a focus on simplicity, reliability, and clean user 
 | 2     | Numbers (0–9)                 |
 | 3     | Letters and Numbers           |
 | 4     | Letters and Symbols           |
-| 5     | Numbers and Symbols           |
-| 6     | Letters, Numbers, and Symbols |
+| 5     | Letters, Numbers, and Symbols |
 
 ---
 
