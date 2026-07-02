@@ -22,6 +22,7 @@ print("Valid length:", length)
 
 
 # χαρακτήρες
+randWords = ["apple", "house", "water", "light", "music", "phone", "table", "chair", "window", "door", "coffee", "bread", "cheese", "sugar", "salt", "river", "beach", "sun", "moon", "star", "cloud", "rain", "wind", "tree", "flower", "grass", "stone", "road", "car", "train", "plane", "book", "paper", "pen", "clock", "watch", "bag", "shirt", "shoes", "hat", "glass", "plate", "spoon", "fork", "knife", "bed", "pillow", "blanket", "dream", "smile", "laugh", "happy", "simple", "quick", "bright", "cool", "fresh", "clean", "soft", "strong"]
 level1_ch = string.ascii_letters
 level2_ch = string.digits
 level3_ch = string.ascii_letters + string.digits
@@ -54,8 +55,9 @@ elif password_level == "4":
 elif password_level == "5":
     chars = level5_ch
 
+randWord = random.choice(randWords)
+randWordLen = len(random.choice(randWords))
+passwordCh = "".join(random.choice(chars) for i in range(length - randWordLen))
 
-password = "".join(random.choice(chars) for i in range(length))
-
-print("Your password is:", password)
+print("Your password is:", f"{randWord}{passwordCh}")
 print("MAKE SURE YOU SAVED THE CODE!")
