@@ -1,114 +1,185 @@
 # Password Generator
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Version](https://img.shields.io/badge/version-1.0-informational)
-![Status](https://img.shields.io/badge/status-maintained-success)
-![License](https://img.shields.io/badge/license-MIT-green)
+<p align="center">
+  <strong>Secure • Customizable • Minimal</strong>
+</p>
+
+<p align="center">
+  A modern command-line password generator built with Python, designed for reliability and ease of use.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Version-1.1-informational?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/CLI-Tool-black?style=flat-square">
+  <img src="https://img.shields.io/badge/Security-Focused-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Beginner-Friendly-lightgrey?style=flat-square">
+</p>
+
+---
+
+## Table of Contents
+
+* Overview
+* Key Features
+* Architecture
+* Password Complexity Levels
+* Getting Started
+* Usage Example
+* Project Structure
+* Design Principles
+* Roadmap
+* Contributing
+* License
+* Contact
 
 ---
 
 ## Overview
 
-Password Generator is a lightweight command-line application written in Python for generating secure and customizable passwords.
+**Password Generator** is a lightweight and efficient command-line application written in Python, focused on generating secure and customizable passwords.
 
-The project is designed with a focus on simplicity, reliability, and clean user interaction, making it suitable for both learning purposes and practical usage.
+The application enhances traditional password generation by integrating **real-world words** with randomized character sequences, improving usability without compromising security.
 
 ---
 
-## Features
+## Key Features
 
-* Custom password length input
-* Input validation (numeric values only)
-* Minimum length requirement (8 characters)
-* Multiple password complexity levels
-* Randomized secure password generation
-* Simple and fast command-line interface
+* Configurable password length with validation
+* Enforced minimum length (≥ 8 characters)
+* Five selectable complexity levels
+* Integration of random dictionary words
+* Secure random character generation
+* Clean and intuitive CLI interaction
+* Deterministic and maintainable logic structure
+
+---
+
+## Architecture
+
+The application follows a simple and modular flow:
+
+1. **Input Validation Layer**
+   Ensures valid numeric input and enforces constraints
+
+2. **Configuration Layer**
+   Maps user-selected complexity levels to character sets
+
+3. **Generation Engine**
+
+   * Selects a random word
+   * Generates random characters
+   * Combines both into a final password
+
+4. **Output Layer**
+   Displays the generated password clearly to the user
 
 ---
 
 ## Password Complexity Levels
 
-| Level | Composition                   |
-| ----- | ----------------------------- |
-| 1     | Letters (A–Z, a–z)            |
-| 2     | Numbers (0–9)                 |
-| 3     | Letters and Numbers           |
-| 4     | Letters and Symbols           |
-| 5     | Letters, Numbers, and Symbols |
+| Level | Composition                  |
+| ----- | ---------------------------- |
+| 1     | Letters (A–Z, a–z)           |
+| 2     | Numbers (0–9)                |
+| 3     | Letters and Numbers          |
+| 4     | Letters and Symbols          |
+| 5     | Letters, Numbers and Symbols |
 
 ---
 
 ## Getting Started
 
-### Clone the repository
+### Clone Repository
 
-```bash
+```bash id="aa12xz"
 git clone https://github.com/yourusername/password-generator.git
 cd password-generator
 ```
 
-### Run the application
+### Run Application
 
-```bash
+```bash id="bb98kl"
 python main.py
 ```
 
 ---
 
-## Example Usage
+## Usage Example
 
-```text
-Enter the password length: 12
-Enter the password level (1-6): 6
+```text id="cc73pl"
+Enter the password length: 14
+Enter the password level (1-5): 5
 
-Your password is: X@9kL!2zQ#pR
+Your password is: riverX#9kL!2pQ
+MAKE SURE YOU SAVED THE CODE!
 ```
 
 ---
 
 ## Project Structure
 
-```
+```id="dd19op"
 password-generator/
-│── main.py
-│── README.md
+│
+├── main.py        # Core application logic
+└── README.md      # Project documentation
 ```
 
 ---
 
-## Design Goals
+## Design Principles
 
-* Keep the application simple and easy to use
-* Ensure correct input handling
-* Provide flexible password generation
-* Maintain clean and readable code
+* **Simplicity**
+  Minimal dependencies and straightforward logic
+
+* **Security**
+  Strong randomness using Python standard libraries
+
+* **Usability**
+  Readable passwords through word integration
+
+* **Maintainability**
+  Clean structure and easily extendable code
 
 ---
 
-## Future Improvements
+## Roadmap
 
-* Graphical user interface (GUI)
-* Web-based version
-* Password strength evaluation
-* Clipboard integration
-* Configuration options
+* Desktop GUI interface
+* Web-based version (Flask / FastAPI)
+* Password strength evaluation module
+* Clipboard auto-copy functionality
+* Custom dictionary support
+* Randomized word placement
 
 ---
 
 ## Contributing
 
-Contributions are welcome.
-You can open an issue or submit a pull request for improvements.
+Contributions are encouraged.
+
+To contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a pull request
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+Distributed under the MIT License.
+
+---
 
 ## Contact
 
-For feedback, questions, or collaboration:
-
-- Email: arko-group@hotmail.com
-- GitHub: https://github.com/IsarBit
+Email: [arko-group@hotmail.com](mailto:arko-group@hotmail.com)
+GitHub: https://github.com/IsarBit
